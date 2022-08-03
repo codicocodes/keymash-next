@@ -215,7 +215,7 @@ const Queue = (props: IProps) => {
           name: 'component.navbar.leaders',
           icon: faTrophy,
           color: 'text-yellow-400',
-          onClick: () => setRedirect('/leaderboards/ranked/5'),
+          onClick: () => setRedirect('/leaderboards/ranked/7'),
         },
         {
           name: 'page.queue.ranked.info',
