@@ -122,7 +122,7 @@ export async function getServerSideProps({ req, params }: GetServerSidePropsCont
         headers: { cookie: req.headers.cookie },
       })
       .catch((e) => console.log(e));
-    if (response && !response.data.error) return (response.data || []).splice(0, 2);
+    if (response && !response.data.error) return (response.data?.entries || []).splice(0, 2);
     else return [];
   };
 
